@@ -1,0 +1,7 @@
+[0.006s] Invoking command in '/home/alexis/bipp_ws/build/my_robot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alexis/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alexis/bipp_ws/src/V1_Robot_Mobil_description -DCMAKE_INSTALL_PREFIX=/home/alexis/bipp_ws/install/my_robot_description
+[0.016s] -- Configuring incomplete, errors occurred!
+[0.016s] [31mCMake Error at CMakeLists.txt:13 (ament_package):
+[0.016s]   Unknown CMake command "ament_package".
+[0.016s] 
+[0.016s] [0m
+[0.018s] Invoked command in '/home/alexis/bipp_ws/build/my_robot_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alexis/ros2_ws/install/my_py_pkg:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alexis/bipp_ws/src/V1_Robot_Mobil_description -DCMAKE_INSTALL_PREFIX=/home/alexis/bipp_ws/install/my_robot_description
