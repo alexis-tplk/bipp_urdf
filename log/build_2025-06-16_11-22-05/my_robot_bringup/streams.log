@@ -1,0 +1,41 @@
+[0.036s] Invoking command in '/home/alexis/bipp_urdf/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alexis/bipp_urdf/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/alexis/bipp_urdf/install/my_robot_bringup
+[1.656s] -- The C compiler identification is GNU 13.3.0
+[2.620s] -- The CXX compiler identification is GNU 13.3.0
+[2.796s] -- Detecting C compiler ABI info
+[3.421s] -- Detecting C compiler ABI info - done
+[3.454s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.464s] -- Detecting C compile features
+[3.473s] -- Detecting C compile features - done
+[3.542s] -- Detecting CXX compiler ABI info
+[4.121s] -- Detecting CXX compiler ABI info - done
+[4.153s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[4.153s] -- Detecting CXX compile features
+[4.154s] -- Detecting CXX compile features - done
+[4.254s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[4.958s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[6.237s] -- Configuring done (6.1s)
+[6.239s] -- Generating done (0.0s)
+[6.260s] -- Build files have been written to: /home/alexis/bipp_urdf/build/my_robot_bringup
+[6.305s] Invoked command in '/home/alexis/bipp_urdf/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alexis/bipp_urdf/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/alexis/bipp_urdf/install/my_robot_bringup
+[6.306s] Invoking command in '/home/alexis/bipp_urdf/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alexis/bipp_urdf/build/my_robot_bringup -- -j4 -l4
+[6.492s] Invoked command in '/home/alexis/bipp_urdf/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alexis/bipp_urdf/build/my_robot_bringup -- -j4 -l4
+[6.535s] Invoking command in '/home/alexis/bipp_urdf/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alexis/bipp_urdf/build/my_robot_bringup
+[6.576s] -- Install configuration: ""
+[6.579s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup//launch
+[6.579s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup//launch/my_robot_gazebo.launch
+[6.579s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup
+[6.579s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/ament_index/resource_index/parent_prefix_path/my_robot_bringup
+[6.580s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.sh
+[6.580s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.dsv
+[6.580s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/environment/path.sh
+[6.580s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/environment/path.dsv
+[6.580s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/local_setup.bash
+[6.580s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/local_setup.sh
+[6.580s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/local_setup.zsh
+[6.580s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/local_setup.dsv
+[6.603s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.dsv
+[6.603s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/ament_index/resource_index/packages/my_robot_bringup
+[6.603s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig.cmake
+[6.603s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig-version.cmake
+[6.603s] -- Installing: /home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.xml
+[6.603s] Invoked command in '/home/alexis/bipp_urdf/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alexis/bipp_urdf/build/my_robot_bringup

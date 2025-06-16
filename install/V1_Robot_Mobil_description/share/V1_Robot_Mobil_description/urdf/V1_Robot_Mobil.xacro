@@ -951,7 +951,7 @@
 
 
 
-<link name="Camera_stereo_v3_1">
+<!-- <link name="Camera_stereo_v3_1">
   <inertial>
     <origin xyz="-0.03749953126062 0.007467405126430793 -0.007104288060535674" rpy="0 0 0"/>
     <mass value="0.28987792909524945"/>
@@ -970,7 +970,7 @@
       <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/Camera_stereo_v3_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
-</link>
+</link> -->
 
 <link name="illustation_entretoise_12mm_v2__8__1">
   <inertial>
@@ -1350,7 +1350,7 @@
   </collision>
 </link>
 
-
+<!-- 
 
 <link name="support_camera_stereo">
   <inertial>
@@ -1371,7 +1371,7 @@
       <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/support_camera2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
-</link>
+</link> -->
 
 <link name="world"/>
 <joint name="base_joint" type="fixed">
@@ -1507,17 +1507,17 @@
   <child link="illustation_entretoise_12mm_v2__2__1"/>
 </joint> -->
 
-<joint name="Rigide 31" type="fixed">
+<!-- <joint name="Rigide 31" type="fixed">
   <origin xyz="-0.024834 0.139481 0.069149" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="Camera_stereo_v3_1"/>
-</joint>
-
+</joint> -->
+<!-- 
 <joint name="Support_Camera" type="fixed">
   <origin xyz="-0.0 -0.000 0.0" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="support_camera_stereo"/>
-</joint>
+</joint> -->
 
 
 <!-- <joint name="Rigide 32" type="fixed">

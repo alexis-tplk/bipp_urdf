@@ -1,0 +1,212 @@
+[0.241s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.241s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7686a2e5b800>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7686a2e291f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7686a2e291f0>>, mixin_verb=('build',))
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.342s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.342s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/alexis/bipp_urdf'
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.342s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.343s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.506s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.507s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/V1_Robot_Mobil_description) by extensions ['ignore', 'ignore_ament_install']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/V1_Robot_Mobil_description) by extension 'ignore'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/V1_Robot_Mobil_description) by extension 'ignore_ament_install'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/V1_Robot_Mobil_description) by extensions ['colcon_pkg']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/V1_Robot_Mobil_description) by extension 'colcon_pkg'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/V1_Robot_Mobil_description) by extensions ['colcon_meta']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/V1_Robot_Mobil_description) by extension 'colcon_meta'
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/V1_Robot_Mobil_description) by extensions ['ros']
+[0.510s] Level 1:colcon.colcon_core.package_identification:_identify(src/V1_Robot_Mobil_description) by extension 'ros'
+[0.520s] DEBUG:colcon.colcon_core.package_identification:Package 'src/V1_Robot_Mobil_description' with type 'ros.ament_cmake' and name 'V1_Robot_Mobil_description'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ignore'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ignore_ament_install'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['colcon_pkg']
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'colcon_pkg'
+[0.521s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['colcon_meta']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'colcon_meta'
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extensions ['ros']
+[0.522s] Level 1:colcon.colcon_core.package_identification:_identify(src/my_robot_bringup) by extension 'ros'
+[0.523s] DEBUG:colcon.colcon_core.package_identification:Package 'src/my_robot_bringup' with type 'ros.ament_cmake' and name 'my_robot_bringup'
+[0.523s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.523s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.523s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.523s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.524s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.602s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.604s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/alexis/bipp_urdf/install/my_robot_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.604s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/alexis/bipp_urdf/install/my_robot_bringup' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.604s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.606s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/alexis/bipp_urdf/install/my_robot_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.610s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/alexis/bipp_urdf/install/my_robot_bringup' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.616s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.618s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 0 installed packages in /home/alexis/bipp_urdf/install
+[0.619s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/alexis/ros2_ws/install
+[0.621s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 304 installed packages in /opt/ros/jazzy
+[0.626s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'V1_Robot_Mobil_description' build argument 'cmake_args' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'V1_Robot_Mobil_description' build argument 'cmake_target' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'V1_Robot_Mobil_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'V1_Robot_Mobil_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'V1_Robot_Mobil_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'V1_Robot_Mobil_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'V1_Robot_Mobil_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'V1_Robot_Mobil_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.800s] Level 5:colcon.colcon_core.verb:set package 'V1_Robot_Mobil_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.800s] DEBUG:colcon.colcon_core.verb:Building package 'V1_Robot_Mobil_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alexis/bipp_urdf/build/V1_Robot_Mobil_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description', 'merge_install': False, 'path': '/home/alexis/bipp_urdf/src/V1_Robot_Mobil_description', 'symlink_install': False, 'test_result_base': None}
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_args' from command line to 'None'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_target' from command line to 'None'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.801s] Level 5:colcon.colcon_core.verb:set package 'my_robot_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.801s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/alexis/bipp_urdf/build/my_robot_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/alexis/bipp_urdf/install/my_robot_bringup', 'merge_install': False, 'path': '/home/alexis/bipp_urdf/src/my_robot_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.801s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.813s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.814s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alexis/bipp_urdf/src/V1_Robot_Mobil_description' with build type 'ament_cmake'
+[0.815s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alexis/bipp_urdf/src/V1_Robot_Mobil_description'
+[0.822s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.822s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.822s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.836s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/alexis/bipp_urdf/src/my_robot_bringup' with build type 'ament_cmake'
+[0.837s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/alexis/bipp_urdf/src/my_robot_bringup'
+[0.839s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.840s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alexis/bipp_urdf/build/V1_Robot_Mobil_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alexis/bipp_urdf/src/V1_Robot_Mobil_description -DCMAKE_INSTALL_PREFIX=/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description
+[0.881s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alexis/bipp_urdf/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alexis/bipp_urdf/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/alexis/bipp_urdf/install/my_robot_bringup
+[7.150s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alexis/bipp_urdf/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alexis/bipp_urdf/src/my_robot_bringup -DCMAKE_INSTALL_PREFIX=/home/alexis/bipp_urdf/install/my_robot_bringup
+[7.151s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alexis/bipp_urdf/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alexis/bipp_urdf/build/my_robot_bringup -- -j4 -l4
+[7.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alexis/bipp_urdf/build/V1_Robot_Mobil_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/alexis/bipp_urdf/src/V1_Robot_Mobil_description -DCMAKE_INSTALL_PREFIX=/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description
+[7.184s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alexis/bipp_urdf/build/V1_Robot_Mobil_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alexis/bipp_urdf/build/V1_Robot_Mobil_description -- -j4 -l4
+[7.337s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alexis/bipp_urdf/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alexis/bipp_urdf/build/my_robot_bringup -- -j4 -l4
+[7.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alexis/bipp_urdf/build/my_robot_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alexis/bipp_urdf/build/my_robot_bringup
+[7.392s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alexis/bipp_urdf/build/V1_Robot_Mobil_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/alexis/bipp_urdf/build/V1_Robot_Mobil_description -- -j4 -l4
+[7.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/alexis/bipp_urdf/build/V1_Robot_Mobil_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alexis/bipp_urdf/build/V1_Robot_Mobil_description
+[7.427s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup)
+[7.447s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup' for CMake module files
+[7.449s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup' for CMake config files
+[7.448s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alexis/bipp_urdf/build/my_robot_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alexis/bipp_urdf/build/my_robot_bringup
+[7.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup', 'cmake_prefix_path')
+[7.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.ps1'
+[7.458s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.dsv'
+[7.459s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.sh'
+[7.467s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup/bin'
+[7.468s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup/lib/pkgconfig/my_robot_bringup.pc'
+[7.468s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup/lib/python3.12/site-packages'
+[7.469s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup/bin'
+[7.469s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.ps1'
+[7.472s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.dsv'
+[7.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.sh'
+[7.489s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.bash'
+[7.502s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.zsh'
+[7.505s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alexis/bipp_urdf/install/my_robot_bringup/share/colcon-core/packages/my_robot_bringup)
+[7.512s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_bringup)
+[7.512s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup' for CMake module files
+[7.519s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup' for CMake config files
+[7.519s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_bringup', 'cmake_prefix_path')
+[7.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.ps1'
+[7.526s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.dsv'
+[7.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/hook/cmake_prefix_path.sh'
+[7.543s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup/bin'
+[7.543s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup/lib/pkgconfig/my_robot_bringup.pc'
+[7.544s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup/lib/python3.12/site-packages'
+[7.545s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/my_robot_bringup/bin'
+[7.546s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.ps1'
+[7.551s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.dsv'
+[7.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.sh'
+[7.560s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.bash'
+[7.561s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/my_robot_bringup/share/my_robot_bringup/package.zsh'
+[7.562s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alexis/bipp_urdf/install/my_robot_bringup/share/colcon-core/packages/my_robot_bringup)
+[7.568s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(V1_Robot_Mobil_description)
+[7.569s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description' for CMake module files
+[7.571s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description' for CMake config files
+[7.571s] Level 1:colcon.colcon_core.shell:create_environment_hook('V1_Robot_Mobil_description', 'cmake_prefix_path')
+[7.571s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/hook/cmake_prefix_path.ps1'
+[7.572s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/hook/cmake_prefix_path.dsv'
+[7.575s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/alexis/bipp_urdf/build/V1_Robot_Mobil_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/alexis/bipp_urdf/build/V1_Robot_Mobil_description
+[7.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/hook/cmake_prefix_path.sh'
+[7.578s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/bin'
+[7.578s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/lib/pkgconfig/V1_Robot_Mobil_description.pc'
+[7.578s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/lib/python3.12/site-packages'
+[7.579s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/bin'
+[7.579s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/package.ps1'
+[7.580s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/package.dsv'
+[7.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/package.sh'
+[7.586s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/package.bash'
+[7.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/package.zsh'
+[7.590s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/colcon-core/packages/V1_Robot_Mobil_description)
+[7.594s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(V1_Robot_Mobil_description)
+[7.595s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description' for CMake module files
+[7.596s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description' for CMake config files
+[7.597s] Level 1:colcon.colcon_core.shell:create_environment_hook('V1_Robot_Mobil_description', 'cmake_prefix_path')
+[7.597s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/hook/cmake_prefix_path.ps1'
+[7.601s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/hook/cmake_prefix_path.dsv'
+[7.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/hook/cmake_prefix_path.sh'
+[7.609s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/bin'
+[7.610s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/lib/pkgconfig/V1_Robot_Mobil_description.pc'
+[7.610s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/lib/python3.12/site-packages'
+[7.611s] Level 1:colcon.colcon_core.environment:checking '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/bin'
+[7.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/package.ps1'
+[7.620s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/package.dsv'
+[7.627s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/package.sh'
+[7.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/package.bash'
+[7.643s] INFO:colcon.colcon_core.shell:Creating package script '/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/V1_Robot_Mobil_description/package.zsh'
+[7.658s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/alexis/bipp_urdf/install/V1_Robot_Mobil_description/share/colcon-core/packages/V1_Robot_Mobil_description)
+[7.660s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[7.662s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[7.662s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[7.663s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[7.679s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[7.679s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[7.679s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[7.787s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[7.788s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alexis/bipp_urdf/install/local_setup.ps1'
+[7.791s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alexis/bipp_urdf/install/_local_setup_util_ps1.py'
+[7.795s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alexis/bipp_urdf/install/setup.ps1'
+[7.800s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alexis/bipp_urdf/install/local_setup.sh'
+[7.802s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/alexis/bipp_urdf/install/_local_setup_util_sh.py'
+[7.806s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alexis/bipp_urdf/install/setup.sh'
+[7.816s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alexis/bipp_urdf/install/local_setup.bash'
+[7.818s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alexis/bipp_urdf/install/setup.bash'
+[7.821s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/alexis/bipp_urdf/install/local_setup.zsh'
+[7.822s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/alexis/bipp_urdf/install/setup.zsh'

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/alexis/bipp_ws/src/V1_Robot_Mobil_description
+CMAKE_SOURCE_DIR = /home/alexis/bipp_urdf/src/V1_Robot_Mobil_description
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alexis/bipp_ws/build/V1_Robot_Mobil_description
+CMAKE_BINARY_DIR = /home/alexis/bipp_urdf/build/V1_Robot_Mobil_description
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/alexis/bipp_ws/build/V1_Robot_Mobil_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alexis/bipp_ws/src/V1_Robot_Mobil_description /home/alexis/bipp_ws/src/V1_Robot_Mobil_description /home/alexis/bipp_ws/build/V1_Robot_Mobil_description /home/alexis/bipp_ws/build/V1_Robot_Mobil_description /home/alexis/bipp_ws/build/V1_Robot_Mobil_description/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/alexis/bipp_urdf/build/V1_Robot_Mobil_description && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alexis/bipp_urdf/src/V1_Robot_Mobil_description /home/alexis/bipp_urdf/src/V1_Robot_Mobil_description /home/alexis/bipp_urdf/build/V1_Robot_Mobil_description /home/alexis/bipp_urdf/build/V1_Robot_Mobil_description /home/alexis/bipp_urdf/build/V1_Robot_Mobil_description/CMakeFiles/uninstall.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/uninstall.dir/depend
 
