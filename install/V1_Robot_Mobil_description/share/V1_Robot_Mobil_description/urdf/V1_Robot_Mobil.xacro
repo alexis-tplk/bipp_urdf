@@ -3,7 +3,27 @@
 
 <xacro:include filename="$(find V1_Robot_Mobil_description)/urdf/materials.xacro" />
 <xacro:include filename="$(find V1_Robot_Mobil_description)/urdf/V1_Robot_Mobil.trans" />
-<!-- <xacro:include filename="$(find V1_Robot_Mobil_description)/urdf/V1_Robot_Mobil_gazebo" />  -->
+<xacro:include filename="$(find V1_Robot_Mobil_description)/urdf/V1_Robot_Mobil_gazebo.xacro" /> 
+
+<xacro:property name="laser_LIDAR_part2_v2_1_offsety" value="0"/>
+<xacro:property name="LIDAR_part2_v2_1_LIDAR_part1_v4_1_offsety" value="0.04199"/>
+<xacro:property name="LIDAR_part1_v4_1_illustation_entretoise_12mm_v2__8__1_offsety" value="0"/>
+<xacro:property name="illustation_entretoise_12mm_v2__8__1_lidarPlate_v6_1_offsety" value="0.0104"/>
+<xacro:property name="lidarPlate_v6_1_illustation_entretoise_70mm_v1_1_offsety" value="0"/>
+<xacro:property name="illustation_entretoise_70mm_v1_1_base_link_offsety" value="-0.075019"/>
+
+
+<xacro:property name="Roue_droite_1_gente_gauche_1_offsety" value="0"/>
+<xacro:property name="gente_gauche_1_moteur_jaune_1_offsety" value="0.0206"/>
+<xacro:property name="moteur_jaune_1_support_roue_2_offsety" value="0"/>
+<xacro:property name="support_roue_2_base_link_offsety" value="-0.000519"/>
+
+<xacro:property name="laser_base_link_offsety" value="${laser_LIDAR_part2_v2_1_offsety + LIDAR_part2_v2_1_LIDAR_part1_v4_1_offsety + LIDAR_part1_v4_1_illustation_entretoise_12mm_v2__8__1_offsety + illustation_entretoise_12mm_v2__8__1_lidarPlate_v6_1_offsety + lidarPlate_v6_1_illustation_entretoise_70mm_v1_1_offsety + illustation_entretoise_70mm_v1_1_base_link_offsety}"/>
+
+<xacro:property name="Roue_droite_1_base_link_offsety" value="${Roue_droite_1_gente_gauche_1_offsety + gente_gauche_1_moteur_jaune_1_offsety + moteur_jaune_1_support_roue_2_offsety + support_roue_2_base_link_offsety}"/>
+
+
+
 <link name="base_link">
   <inertial>
     <origin xyz="-0.011333094366449302 0.019804733434516074 0.0676490573699715" rpy="0 0 0"/>
@@ -192,321 +212,6 @@
     </geometry>
   </collision>
 </link>
-<!-- 
-<link name="SG90_V1_v1_1">
-  <inertial>
-    <origin xyz="0.03487746847113202 0.014544287043435106 -0.06161565969845402" rpy="0 0 0"/>
-    <mass value="0.047113050905792125"/>
-    <inertia ixx="4e-06" iyy="3e-06" izz="3e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.046211 -0.090448 -0.135298" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/SG90_V1_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.046211 -0.090448 -0.135298" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/SG90_V1_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-<!-- <link name="illustation_entretoise_12mm_v2_1">
-  <inertial>
-    <origin xyz="4.6847145871234397e-07 2.323489760036601e-07 0.006000057369971307" rpy="0 0 0"/>
-    <mass value="0.0006394129256555783"/>
-    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.024834 -0.119481 -0.069149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_12mm_v2_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.024834 -0.119481 -0.069149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_12mm_v2_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-<!-- <link name="illustation_entretoise_12mm_v2__1__1">
-  <inertial>
-    <origin xyz="4.6847145873359433e-07 2.3234897604529348e-07 0.00600005736997139" rpy="0 0 0"/>
-    <mass value="0.0006394129256555783"/>
-    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.002166 -0.119481 -0.069149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_12mm_v2__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.002166 -0.119481 -0.069149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_12mm_v2__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-<!-- <link name="illustation_entretoise_12mm_v2__2__1">
-  <inertial>
-    <origin xyz="4.684714587067061e-07 2.3234897592039339e-07 0.00600005736997139" rpy="0 0 0"/>
-    <mass value="0.0006394129256555783"/>
-    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.002166 -0.139481 -0.069149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_12mm_v2__2__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.002166 -0.139481 -0.069149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_12mm_v2__2__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-<!-- <link name="illustation_entretoise_12mm_v2__3__1">
-  <inertial>
-    <origin xyz="4.684714586776495e-07 2.3234897594814896e-07 0.006000057369971334" rpy="0 0 0"/>
-    <mass value="0.0006394129256555783"/>
-    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.024834 -0.139481 -0.069149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_12mm_v2__3__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.024834 -0.139481 -0.069149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_12mm_v2__3__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-<!-- 
-<link name="Socle_Niv1_v6_1">
-  <inertial>
-    <origin xyz="-0.013629751684390345 -0.009999767720685976 0.0010000573699713577" rpy="0 0 0"/>
-    <mass value="0.017490216835436147"/>
-    <inertia ixx="1e-06" iyy="6e-06" izz="7e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.002166 -0.139481 -0.081149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/Socle_Niv1_v6_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.002166 -0.139481 -0.081149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/Socle_Niv1_v6_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-<!-- <link name="illustation_entretoise_3_v2_1">
-  <inertial>
-    <origin xyz="4.687395950171702e-07 2.3234897586488223e-07 0.004000057369971374" rpy="0 0 0"/>
-    <mass value="0.00017036001397236956"/>
-    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.025134 -0.129481 -0.083149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_3_v2_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.025134 -0.129481 -0.083149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_3_v2_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-<!-- 
-<link name="illustation_entretoise_3_v2__1__1">
-  <inertial>
-    <origin xyz="4.6908232182460777e-07 2.323489758926378e-07 0.004000057369971374" rpy="0 0 0"/>
-    <mass value="0.00017036001397236956"/>
-    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.003466 -0.129481 -0.083149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_3_v2__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.003466 -0.129481 -0.083149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/illustation_entretoise_3_v2__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-<!-- 
-<link name="SG90_V1_v1__1__1">
-  <inertial>
-    <origin xyz="0.013811523433811939 2.323489758926378e-07 -0.002033225561603305" rpy="0 0 0"/>
-    <mass value="0.047113050905792125"/>
-    <inertia ixx="3e-06" iyy="4e-06" izz="3e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.025134 -0.129481 -0.091149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/SG90_V1_v1__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.025134 -0.129481 -0.091149" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/SG90_V1_v1__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-<!-- 
-<link name="SG90_slot_1_1">
-  <inertial>
-    <origin xyz="4.6873400406238774e-07 2.3285903644199024e-07 0.00214911116079651" rpy="0 0 0"/>
-    <mass value="0.0014672674655415944"/>
-    <inertia ixx="1e-08" iyy="6e-08" izz="6e-08" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.015934 -0.129481 -0.101949" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/SG90_slot_1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.015934 -0.129481 -0.101949" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/SG90_slot_1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-<!-- 
-<link name="base_camera_niv1_v1_1">
-  <inertial>
-    <origin xyz="4.675759468497631e-07 2.3209993837980392e-07 -0.0009999426300286302" rpy="0 0 0"/>
-    <mass value="0.04794063452340887"/>
-    <inertia ixx="3e-06" iyy="5.8e-05" izz="6.1e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.015934 -0.129481 -0.103949" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv1_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.015934 -0.129481 -0.103949" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv1_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-<!-- 
-<link name="base_camera_niv2_1_v6_1">
-  <inertial>
-    <origin xyz="4.687393527769146e-07 -0.006999173760916216 0.0172982109600035" rpy="0 0 0"/>
-    <mass value="0.014155958827538562"/>
-    <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.071434 -0.136481 -0.103949" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv2_1_v6_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.071434 -0.136481 -0.103949" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv2_1_v6_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-<!-- 
-<link name="base_camera_niv2_2_v5_1">
-  <inertial>
-    <origin xyz="4.6873935293650915e-07 0.006999441294755826 0.016570769687492798" rpy="0 0 0"/>
-    <mass value="0.010627696385805586"/>
-    <inertia ixx="2e-06" iyy="1e-06" izz="1e-06" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.039566 -0.122481 -0.103949" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv2_2_v5_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.039566 -0.122481 -0.103949" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv2_2_v5_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-<!-- <link name="SG90_V1_v1__2__1">
-  <inertial>
-    <origin xyz="-0.004532814192221665 0.013811287043434956 3.8157455434228993e-07" rpy="0 0 0"/>
-    <mass value="0.047113050905792125"/>
-    <inertia ixx="3e-06" iyy="3e-06" izz="4e-06" ixy="0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.038566 -0.115281 -0.123438" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/SG90_V1_v1__2__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.038566 -0.115281 -0.123438" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/SG90_V1_v1__2__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-<!-- <link name="slot_type_2_v4_1">
-  <inertial>
-    <origin xyz="0.002002547906652566 -9.760176477566218e-06 0.002672180343408617" rpy="0 0 0"/>
-    <mass value="0.0011011067412301362"/>
-    <inertia ixx="3e-08" iyy="2e-08" izz="1e-08" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.046866 -0.124481 -0.123438" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/slot_type_2_v4_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.046866 -0.124481 -0.123438" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/slot_type_2_v4_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
 
 <link name="illustation_entretoise_70mm_v1_1">
   <inertial>
@@ -886,92 +591,6 @@
   </collision>
 </link>
 
-<!-- <link name="base_camera_niv3_1_v2_1">
-  <inertial>
-    <origin xyz="0.12148846873935296 0.12461633307319951 0.060378864280039635" rpy="0 0 0"/>
-    <mass value="0.006793511398361307"/>
-    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="-0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.073572 -0.0 -0.076572" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv3_1_v2_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.073572 -0.0 -0.076572" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv3_1_v2_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-<!-- <link name="base_camera_niv3_v4_1">
-  <inertial>
-    <origin xyz="0.09864446873935112 0.050959232348975855 -0.10744265137903988" rpy="0 0 0"/>
-    <mass value="0.10377906280662101"/>
-    <inertia ixx="8e-06" iyy="0.000115" izz="0.000108" ixy="0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.107478 -0.073522 -0.259328" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv3_v4_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.107478 -0.073522 -0.259328" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv3_v4_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-<!-- <link name="base_camera_niv3_1_v2__1__1">
-  <inertial>
-    <origin xyz="0.008478468739352998 0.1552793330731995 -0.14284313571996035" rpy="0 0 0"/>
-    <mass value="0.006793511398361307"/>
-    <inertia ixx="1e-06" iyy="1e-06" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.073562 0.030663 -0.279794" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv3_1_v2__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.073562 0.030663 -0.279794" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/base_camera_niv3_1_v2__1__1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-
-
-<!-- <link name="Camera_stereo_v3_1">
-  <inertial>
-    <origin xyz="-0.03749953126062 0.007467405126430793 -0.007104288060535674" rpy="0 0 0"/>
-    <mass value="0.28987792909524945"/>
-    <inertia ixx="2.4e-05" iyy="0.000209" izz="0.000196" ixy="0.0" iyz="0.0" ixz="-0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="-0.028666 -0.125481 -0.158944" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/Camera_stereo_v3_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="-0.028666 -0.125481 -0.158944" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/Camera_stereo_v3_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
 <link name="illustation_entretoise_12mm_v2__8__1">
   <inertial>
     <origin xyz="2.8014154231266464e-07 2.3055189639353824e-07 0.00600005736997164" rpy="0 0 0"/>
@@ -1350,85 +969,14 @@
   </collision>
 </link>
 
-<!-- 
 
-<link name="support_camera_stereo">
-  <inertial>
-    <origin xyz="0.02107629 0.04118402 0.04558229" rpy="0 0 0"/>
-    <mass value="0.02697424"/>
-    <inertia ixx="0.00002822" iyy="0.00000906" izz="0.00002093" ixy="0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.0 -0.0 -0.0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/support_camera2.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.0 -0.0 -0.0" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/support_camera2.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-
-<link name="world"/>
-<joint name="base_joint" type="fixed">
-  <parent link="world"/>
-  <child link="base_link"/>
-</joint>
-
-<!-- 
-<link name="slot_type_1_v1_1">
-  <inertial>
-    <origin xyz="4.6846578327999766e-07 2.3183891539879653e-07 0.0008510035791462686" rpy="0 0 0"/>
-    <mass value="0.0014672674655415944"/>
-    <inertia ixx="1e-08" iyy="6e-08" izz="6e-08" ixy="0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.011334 -0.100381 -0.057649" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/slot_type_1_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.011334 -0.100381 -0.057649" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/slot_type_1_v1_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-<!-- 
-<link name="ultrasonic_v2_1">
-  <inertial>
-    <origin xyz="4.6847173497052697e-07 0.020132117882481357 -0.0013606896931045442" rpy="0 0 0"/>
-    <mass value="0.04691173455112648"/>
-    <inertia ixx="5e-06" iyy="1.1e-05" izz="1.5e-05" ixy="-0.0" iyz="0.0" ixz="0.0"/>
-  </inertial>
-  <visual>
-    <origin xyz="0.011334 -0.100381 -0.058649" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/ultrasonic_v2_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-    <material name="silver"/>
-  </visual>
-  <collision>
-    <origin xyz="0.011334 -0.100381 -0.058649" rpy="0 0 0"/>
-    <geometry>
-      <mesh filename="file://$(find V1_Robot_Mobil_description)/meshes/ultrasonic_v2_1.stl" scale="0.001 0.001 0.001"/>
-    </geometry>
-  </collision>
-</link> -->
-<!-- 
 <link name="base_footprint" />
 
 <joint name="base_joint" type="fixed">
         <parent link="base_footprint" />
         <child link="base_link" />
         <origin xyz="0 0 0.0325" rpy="0 0 0"/>
-    </joint> -->
+    </joint> 
 
 
 
@@ -1469,118 +1017,21 @@
   <child link="moteur_jaune_1"/>
 </joint>
 
-<joint name="Revolution 24" type="continuous">
+<joint name="revolution 24" type="continuous">
   <origin xyz="0.0188 0.0206 -0.00875" rpy="0 0 0"/>
   <parent link="moteur_jaune_1"/>
   <child link="gente_gauche_1"/>
-  <axis xyz="-1.0 0.0 -0.0"/>
+  <axis xyz="1.0 0.0 -0.0"/>
 </joint>
 
-<joint name="Revolution 25" type="continuous">
+<joint name="revolution 25" type="continuous">
   <origin xyz="-0.0188 0.0206 -0.00875" rpy="0 0 0"/>
   <parent link="moteur_jaune2_1"/>
   <child link="gente_droite_1"/>
   <axis xyz="1.0 -0.0 0.0"/>
 </joint>
 
-<!-- <joint name="Rigide 27" type="fixed">
-  <origin xyz="-0.046211 0.090448 0.135298" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="SG90_V1_v1_1"/>
-</joint> -->
 
-<!-- <joint name="Rigide 28" type="fixed">
-  <origin xyz="-0.024834 0.119481 0.069149" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="illustation_entretoise_12mm_v2_1"/>
-</joint> -->
-
-<!-- <joint name="Rigide 29" type="fixed">
-  <origin xyz="0.002166 0.119481 0.069149" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="illustation_entretoise_12mm_v2__1__1"/>
-</joint> -->
-<!-- 
-<joint name="Rigide 30" type="fixed">
-  <origin xyz="0.002166 0.139481 0.069149" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="illustation_entretoise_12mm_v2__2__1"/>
-</joint> -->
-
-<!-- <joint name="Rigide 31" type="fixed">
-  <origin xyz="-0.024834 0.139481 0.069149" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="Camera_stereo_v3_1"/>
-</joint> -->
-<!-- 
-<joint name="Support_Camera" type="fixed">
-  <origin xyz="-0.0 -0.000 0.0" rpy="0 0 0"/>
-  <parent link="base_link"/>
-  <child link="support_camera_stereo"/>
-</joint> -->
-
-
-<!-- <joint name="Rigide 32" type="fixed">
-  <origin xyz="0.0 0.0 0.012" rpy="0 0 0"/>
-  <parent link="illustation_entretoise_12mm_v2__2__1"/>
-  <child link="Socle_Niv1_v6_1"/>
-</joint> -->
-
-<!-- <joint name="Rigide 33" type="fixed">
-  <origin xyz="-0.0273 -0.01 0.002" rpy="0 0 0"/>
-  <parent link="Socle_Niv1_v6_1"/>
-  <child link="illustation_entretoise_3_v2_1"/>
-</joint> -->
-
-<!-- <joint name="Rigide 34" type="fixed">
-  <origin xyz="0.0013 -0.01 0.002" rpy="0 0 0"/>
-  <parent link="Socle_Niv1_v6_1"/>
-  <child link="illustation_entretoise_3_v2__1__1"/>
-</joint>
-
-<joint name="Rigide 35" type="fixed">
-  <origin xyz="0.0 0.0 0.008" rpy="0 0 0"/>
-  <parent link="illustation_entretoise_3_v2_1"/>
-  <child link="SG90_V1_v1__1__1"/>
-</joint>
-
-<joint name="R�volution 36" type="continuous">
-  <origin xyz="0.0092 0.0 0.0108" rpy="0 0 0"/>
-  <parent link="SG90_V1_v1__1__1"/>
-  <child link="SG90_slot_1_1"/>
-  <axis xyz="-0.0 -0.0 -1.0"/>
-</joint> -->
-<!-- 
-<joint name="Rigide 37" type="fixed">
-  <origin xyz="0.0 0.0 0.002" rpy="0 0 0"/>
-  <parent link="SG90_slot_1_1"/>
-  <child link="base_camera_niv1_v1_1"/>
-</joint>
-
-<joint name="Rigide 38" type="fixed">
-  <origin xyz="-0.0555 0.007 0.0" rpy="0 0 0"/>
-  <parent link="base_camera_niv1_v1_1"/>
-  <child link="Camera_stereo_v3_1"/>
-</joint> -->
-
-<!-- <joint name="Rigide 39" type="fixed">
-  <origin xyz="0.0555 -0.007 0.0" rpy="0 0 0"/>
-  <parent link="base_camera_niv1_v1_1"/>
-  <child link="base_camera_niv2_2_v5_1"/>
-</joint> -->
-
-<!-- <joint name="Rigide 50" type="fixed">
-  <origin xyz="-0.001 -0.0072 0.019489" rpy="0 0 0"/>
-  <parent link="base_camera_niv2_2_v5_1"/>
-  <child link="SG90_V1_v1__2__1"/>
-</joint> -->
-
-<!-- <joint name="R�volution 54" type="continuous">
-  <origin xyz="0.0083 0.0092 0.0" rpy="0 0 0"/>
-  <parent link="SG90_V1_v1__2__1"/>
-  <child link="slot_type_2_v4_1"/>
-  <axis xyz="-1.0 0.0 0.0"/>
-</joint> -->
 
 <joint name="Rigide 57" type="fixed">
   <origin xyz="0.039666 -0.075019 0.069149" rpy="0 0 0"/>
@@ -1690,30 +1141,6 @@
   <child link="Bille_v1__2__1"/>
 </joint>
 
-<!-- <joint name="Rigide 77" type="fixed">
-  <origin xyz="-0.120438 -0.124481 -0.046866" rpy="0 0 0"/>
-  <parent link="slot_type_2_v4_1"/>
-  <child link="base_camera_niv3_1_v2_1"/>
-</joint> -->
-
-<!-- <joint name="Rigide 78" type="fixed">
-  <origin xyz="-0.033906 0.073522 0.182756" rpy="0 0 0"/>
-  <parent link="base_camera_niv3_1_v2_1"/>
-  <child link="base_camera_niv3_v4_1"/>
-</joint> -->
-<!-- 
-<joint name="Rigide 79" type="fixed">
-  <origin xyz="0.033916 -0.104185 0.020466" rpy="0 0 0"/>
-  <parent link="base_camera_niv3_v4_1"/>
-  <child link="base_camera_niv3_1_v2__1__1"/>
-</joint> -->
-
-<!-- <joint name="Rigide 80" type="fixed">
-  <origin xyz="0.136144 0.051959 -0.100384" rpy="0 0 0"/>
-  <parent link="base_camera_niv3_v4_1"/>
-  <child link="Camera_stereo_v3_1"/>
-</joint> -->
-
 <joint name="Rigide 83" type="fixed">
   <origin xyz="-0.030872 0.0104 0.002" rpy="0 0 0"/>
   <parent link="lidarPlate_v6_1"/>
@@ -1822,17 +1249,23 @@
   <child link="Batterie_v3_1"/>
 </joint>
 
-<!-- <joint name="R�volution 114" type="continuous">
-  <origin xyz="0.034877 0.009933 -0.077649" rpy="0 0 0"/>
-  <parent link="SG90_V1_v1_1"/>
-  <child link="slot_type_1_v1_1"/>
-  <axis xyz="0.0 -0.0 -1.0"/>
-</joint> -->
-<!-- 
-<joint name="Rigide 115" type="fixed">
-  <origin xyz="0.0 0.0 0.001" rpy="0 0 0"/>
-  <parent link="slot_type_1_v1_1"/>
-  <child link="ultrasonic_v2_1"/>
-</joint> -->
+<link name="laser"/>
+
+<joint name="laser_mount" type="fixed">
+  <parent link="LIDAR_part2_v2_1"/> <!-- ou lidarPlate_v6_1 si c’est lui le support final -->
+  <child link="laser"/>
+  <origin xyz="0 ${- laser_base_link_offsety + Roue_droite_1_base_link_offsety} 0" rpy="0 0 0"/> <!-- Rotation de +90° autour de Z -->
+</joint>
+
+<link name="gpu_lidar"/>
+
+<joint name="gpulidar" type="fixed">
+  <parent link="base_footprint"/> <!-- ou lidarPlate_v6_1 si c’est lui le support final -->
+  <child link="gpu_lidar"/>
+  <origin xyz="0 ${- laser_base_link_offsety + Roue_droite_1_base_link_offsety} 0" rpy="0 0 0"/> <!-- Rotation de +90° autour de Z -->
+</joint>
+
+
+
 
 </robot>

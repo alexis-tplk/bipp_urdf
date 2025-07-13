@@ -2,31 +2,56 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" >
 
 <xacro:property name="body_color" value="Gazebo/Silver" />
-<!-- 
-<gazebo>
-  <plugin name="control" filename="libgazebo_ros_control.so"/>
-</gazebo> -->
+
 
 
 <gazebo>
         <plugin 
             filename="gz-sim-diff-drive-system" 
             name="gz::sim::systems::DiffDrive">
-            <left_joint>Revolution 24</left_joint>
-            <right_joint>Revolution 25</right_joint>
+            <left_joint>revolution 24</left_joint>
+            <right_joint>revolution 25</right_joint>
             <wheel_separation>0.45</wheel_separation>
             <wheel_radius>0.1</wheel_radius>
             <frame_id>odom</frame_id>
-            <child_frame_id>world</child_frame_id>
+            <child_frame_id>base_footprint</child_frame_id>
         </plugin>
-    </gazebo>
+</gazebo>
 
-    <gazebo>
+
+<gazebo reference="LIDAR_part2_v2_1">
+  <sensor type="gpu_lidar" name="gpu_lidar">
+    <update_rate>10</update_rate>
+    <ray>
+      <scan>
+        <horizontal>
+          <samples>360</samples>
+          <resolution>1</resolution>
+          <min_angle>-3.14</min_angle>
+          <max_angle>3.14</max_angle>
+        </horizontal>
+      </scan>
+      <range>
+        <min>0.1</min>
+        <max>10.0</max>
+        <resolution>0.01</resolution>
+      </range>
+    </ray>
+    <visualize> true </visualize>
+    <plugin name="gz::sim::systems::Sensors" filename="gz-sim-sensors-system">
+      <topicName>/scan</topicName>
+      <frameName>base_footprint</frameName>
+    </plugin>
+  </sensor>
+</gazebo>
+
+
+<gazebo>
         <plugin 
             filename="gz-sim-joint-state-publisher-system" 
             name="gz::sim::systems::JointStatePublisher">
-            <joint_name>Revolution 24</joint_name>
-            <joint_name>Revolution 25</joint_name>
+            <joint_name>revolution 24</joint_name>
+            <joint_name>revolution 25</joint_name>
         </plugin>
 </gazebo>
 

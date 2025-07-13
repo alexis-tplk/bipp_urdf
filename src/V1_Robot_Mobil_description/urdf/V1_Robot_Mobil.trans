@@ -3,7 +3,7 @@
 
   <transmission name="revolution_24_tran">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="revolution_24">
+    <joint name="revolution 24">
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="revolution_24_actr">
@@ -14,7 +14,7 @@
 
   <transmission name="revolution_25_tran">
     <type>transmission_interface/SimpleTransmission</type>
-    <joint name="revolution_25">
+    <joint name="revolution 25">
       <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
     </joint>
     <actuator name="revolution_25_actr">
